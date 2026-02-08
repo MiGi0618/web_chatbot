@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Qt Creator
+*.pro.user
+*.qbs.user
+*.qmlproject.user
+*.user
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+*.cmake.user
+
+# Build output
+build/
+build-*/
+client_Qt/build/
+
+# Packaging artifacts
+package/stage/
+package/out/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
