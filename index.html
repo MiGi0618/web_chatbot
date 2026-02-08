@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IM 客户端下载</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --accent: #22c55e;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% 10%, #1f2937, #0f172a);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .layout {
+      width: min(520px, 100%);
+      display: grid;
+      gap: 16px;
+    }
+    .card {
+      width: 100%;
+      background: linear-gradient(180deg, #111827, #0b1220);
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+    }
+    h1 { margin: 0 0 8px; font-size: 24px; }
+    h2 { margin: 0 0 8px; font-size: 24px; }
+    p { margin: 0 0 20px; color: var(--muted); }
+    .buttons {
+      display: grid;
+      gap: 12px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: #0b1220;
+      border: 1px solid #1f2937;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn:hover { border-color: var(--accent); }
+    .btn.chatbot {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.16), rgba(16, 185, 129, 0.12));
+      border-color: rgba(34, 197, 94, 0.45);
+    }
+    .btn.chatbot:hover {
+      border-color: #34d399;
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.18);
+    }
+    .btn.chatbot .tag {
+      background: #34d399;
+      color: #052e16;
+    }
+    .tag {
+      font-size: 12px;
+      color: #111827;
+      background: var(--accent);
+      padding: 4px 8px;
+      border-radius: 999px;
+    }
+    .note { margin-top: 16px; font-size: 12px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="card">
+    <h1>IM 客户端下载</h1>
+    <p>请选择对应平台安装包：</p>
+    <div class="buttons">
+      <a class="btn" href="im.exe">
+        Windows 版本
+        <span class="tag">im.exe</span>
+      </a>
+      <a class="btn" href="im.apk">
+        Android 版本
+        <span class="tag">im.apk</span>
+      </a>
+    </div>
+    <div class="note">如下载失败，请确认服务器已放置对应文件。</div>
+    </div>
+    <div class="card chatbot-panel">
+      <h2>AI Chatbot</h2>
+      <p>???????</p>
+      <div class="buttons">
+        <a class="btn chatbot" href="templates/index.html">
+          ?? AI ?????
+          <span class="tag">Web Chat</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
